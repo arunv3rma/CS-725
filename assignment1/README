@@ -1,0 +1,27 @@
+# Notes:
+1. I have divided train_data into train(70%) and test(30%) with initial random state parameter of cross_validation
+ method of sklearn is 10.
+2. Due to lack resources, I am not able to tune models.
+3. I have done cross validation of model and computed rmse value for different model for above train and test data.
+
+# To run code, please type this command:
+python model.py
+Output: Root Mean Square Error = 12096.1907456
+
+Note: By default, it is linear regression model
+Score on test Data(using full data) = 48506106.28316 [Best]
+
+For Lasso Regression, please type this command:
+python model.py l
+Output: Root Mean Square Error = 12095.204676
+Score on test Data = 49460052.10033
+
+For Ridge Regression, please type this command:
+python model.py r
+Output: Root Mean Square Error = 12096.2173506
+Score on test Data = 49472742.35036
+
+For Support Vector Regression, please type this command:
+python model.py s
+Output:  Root Mean Square Error = 12359.1978355
+Score on test Data = 52769486.94649
