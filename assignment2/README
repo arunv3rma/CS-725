@@ -1,3 +1,4 @@
+##### Prediction Poker Hand with Neural Network #####
 ## Steps for running code from terminal:
 1. Go to directory, where code is kept
 2. Make sure train.csv and test1.csv file will also in same directory
