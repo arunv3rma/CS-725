@@ -1,0 +1,28 @@
+## Steps for running code from terminal:
+1. Go to directory, where code is kept
+2. Make sure train.csv and test1.csv file will also in same directory
+3. Run following command:
+   python main.py
+
+## Brief details about code structure
+#A. About activation functions
+1. Sigmoid function is used as activation function for each neuron
+2. Softmax function is also defined but not used. One can use it at output layer.
+
+#B. Reading data from train data and preparing data for neural network
+1. Using numpy function genfromtxt, data is read from train.csv
+2. Features(1st 10 columns) and labels(11th column) are separated from train data
+3. Bias is added in features by adding column of 1.
+4. As there are only 9 classes of data(from frequency distribution), 9-dimensional one hot encoding is done
+5. Data centring and whitening is done, but not used.
+
+#C. Neural network design and learning model
+1. Network structure: Input layer - 11 neurons, Hidden layer - 60 neurons, Output layer - 9 neurons
+2. Small weights are taken randomly
+3. Minibatch is used with batch size 1600
+4. Learning rate is taken 0.0035 and maximum number of iteration is taken 5000
+5. Dynamic change is learning rate is implement but not used.
+6. Error function is mean soured error.
+
+#D. Getting result on test data
+1. Using learned weights, class prediction for each test data point has been done.
